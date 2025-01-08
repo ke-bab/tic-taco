@@ -48,7 +48,7 @@ function Board() {
         if (values.every((pos) => cells[pos] === 'x')) {
             return 'x';
         }
-        if (values.every((pos) => pos === 'o')) {
+        if (values.every((pos) => cells[pos] === 'o')) {
             return 'o';
         }
 
@@ -78,5 +78,5 @@ function Board() {
         }
     }
 
-    return {playerAction, winner}
+    return {playerAction}
 }
